@@ -53,7 +53,12 @@ def youtube
 end
 
 def pinterest
-	pinterest = Social.results(@profile, :start_date => Date.today - 7, :end_date => Date.today - 1, :filters => {:socialNetwork.matches => 'Pinterest'}).results[0].visits.to_i
+	@pinterest = Social.results(@profile, :start_date => Date.today - 7, :end_date => Date.today - 1, :filters => {:socialNetwork.matches => 'Pinterest'}).results[0]
+	if !@pinterest.nil?
+		@pinterest.visits.to_i
+	else
+		@pinterest = 0
+	end
 end
 
 def organic
@@ -61,7 +66,12 @@ def organic
 end
 
 def cpc
-	cpc = Medium.results(@profile, :start_date => Date.today - 7, :end_date => Date.today - 1, :filters => {:medium.matches => 'cpc'}).results[0].visits.to_i
+	@cpc = Medium.results(@profile, :start_date => Date.today - 7, :end_date => Date.today - 1, :filters => {:medium.matches => 'cpc'}).results[0]
+	if !@cpc.nil?
+		@cpc.visits.to_i
+	else
+		@cpc = 0
+	end
 end
 
 def twitter
@@ -106,6 +116,10 @@ def internal
 			internal = 0
 	end
 end
+
+
+
+
 
 def stitch
 	internal = Sources.results(@profile, :start_date => Date.today - 7, :end_date => Date.today - 1, :filters => {:source.contains => 'StitchandUnwind'}).results[0].visits
