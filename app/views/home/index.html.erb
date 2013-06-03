@@ -1,0 +1,104 @@
+<h1>Prime Analytics Reports</h1>
+
+<%= form_tag("/results", :method => "get") do %>
+ 
+<br /><br />
+  <%= label_tag(:username, "Username @gmail") %>
+  <%= text_field_tag(:username) %>
+
+
+<br /><br />
+  <%= password_field_tag(:password) %>
+  <%= label_tag(:password, "Password") %>
+
+<br />
+
+<%= radio_button_tag(:ua, "UA-1209775-49") %>
+<%= label_tag(:UA, "AFJM") %><br />
+
+
+<%= radio_button_tag(:ua, "UA-1209775-35") %>
+<%= label_tag(:UA, "AFXC") %><br />
+
+
+<%= radio_button_tag(:ua, "UA-1209775-23") %>
+<%= label_tag(:UA, "AFC") %><br />
+
+
+<%= radio_button_tag(:ua, "UA-1209775-33") %>
+<%= label_tag(:UA, "AFCAP") %><br />
+
+
+<%= radio_button_tag(:ua, "UA-1209775-44") %>
+<%= label_tag(:UA, "AFHC") %><br />
+
+
+<%= radio_button_tag(:ua, "UA-1209775-54") %>
+<%= label_tag(:UA, "AFKC") %><br />
+
+
+<%= radio_button_tag(:ua, "UA-1209775-26") %>
+<%= label_tag(:UA, "AFK") %><br />
+
+
+<%= radio_button_tag(:ua, "UA-1209775-66") %>
+<%= label_tag(:UA, "AFPC") %><br />
+
+
+<%= radio_button_tag(:ua, "UA-1209775-32") %>
+<%= label_tag(:UA, "AFS") %><br />
+
+
+<%= radio_button_tag(:ua, "UA-1209775-60") %>
+<%= label_tag(:UA, "AFWC") %><br />
+
+
+<%= radio_button_tag(:ua, "UA-1209775-64") %>
+<%= label_tag(:UA, "Thrift") %><br />
+
+
+<%= radio_button_tag(:ua, "UA-1209775-39") %>
+<%= label_tag(:UA, "CRC") %><br />
+
+
+<%= radio_button_tag(:ua, "UA-1209775-40") %>
+<%= label_tag(:UA, "CRCBlog") %><br />
+
+
+<%= radio_button_tag(:ua, "UA-1209775-17") %>
+<%= label_tag(:UA, "FC") %><br />
+
+<%= radio_button_tag(:ua, "UA-1209775-18") %>
+<%= label_tag(:UA, "FCBlog") %><br />
+
+<%= radio_button_tag(:ua, "UA-1209775-42") %>
+<%= label_tag(:UA, "FQ") %><br />
+
+
+<%= radio_button_tag(:ua, "UA-1209775-46") %>
+<%= label_tag(:UA, "Stitch") %>
+
+<br /><br />
+  <%= label_tag(:site, 'Name of site e.g. m.allfree.com. If no mobile site, type "none" ') %>
+  <%= text_field_tag(:site) %>
+  <%= submit_tag(value="submit") %>
+<% end %>
+
+
+
+<h1>Test Version</h1>
+
+<%= form_tag("/test", :method => "get") do %>
+
+<br /><br />
+  <%= label_tag(:username, "Username @gmail") %>
+  <%= text_field_tag(:username) %>
+
+
+<br /><br />
+  <%= password_field_tag(:password) %>
+  <%= label_tag(:password, "Password") %>
+
+
+  <%= submit_tag(value="submit") %>
+<% end %>

@@ -1,0 +1,158 @@
+<h1>Results#index</h1>
+<p>Find me in app/views/results/index.html.erb</p>
+
+<table border=".5">
+<tr>
+	<td>Visits This Week</td>
+	<td><%= hits.visits.to_i %></td>
+</tr>
+
+<tr>
+	<td>Pageviews This Week</td>
+	<td><%= hits.pageviews.to_i %></td>
+</tr>
+
+<tr>
+	<td>Traffic Sources</td>
+	<td>Code</td>
+</tr>
+
+<tr>
+	<td>External -- Across all sites</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>Direct</td>
+	<td><%= direct %></td>
+</tr>
+
+<tr>
+	<td>Organic</td>
+	<td><%= organic %></td>
+</tr>
+
+
+<tr>
+	<td>CPC</td>
+	<td><%= cpc %></td>
+</tr>
+
+
+<tr>
+	<td>Facebook</td>
+	<td><%= facebook %></td>
+</tr>
+
+<tr>
+	<td>Pinterest</td>
+	<td><%= pinterest %></td>
+</tr>
+
+<tr>
+	<td>StumbleUpon</td>
+	<td><%= stumble %></td>
+</tr>
+
+<tr>
+	<td>Twitter</td>
+	<td><%= twitter %></td>
+</tr>
+
+<tr>
+	<td>YouTube</td>
+	<td><%= youtube %></td>
+</tr>
+
+
+<tr>
+	<td>Mail + mlr</td>
+	<td><%= mail %></td>
+</tr>
+
+<tr>
+	<td>Mustang</td>
+	<td><%= mustang %></td>
+</tr>
+
+<tr>
+	<td>Mobile</td>
+	<td><%= internal %></td>
+</tr>
+
+
+</table>
+<h3>Copy and pastable versions!</h3>
+<table>
+	<tr>
+		<td><%= hits.visits.to_i %></td>
+		</td>
+	</tr>
+		<tr>
+		<td><%= hits.pageviews.to_i %></td>
+		</td>
+	</tr>
+		<tr>
+		<td>
+		</td>
+	</tr>
+		<tr>
+		<td>
+		</td>
+	</tr>
+		<tr>
+		<td>
+		</td>
+	</tr>
+		<tr>
+		<td>
+		</td>
+	</tr>
+		<tr>
+		<td><%= direct %>
+		</td>
+	</tr>
+		<tr>
+		<td><%= organic %>
+		</td>
+	</tr>
+		<tr>
+		<td><%= cpc %>
+		</td>
+	</tr>
+		<tr>
+		<td><%= facebook %>
+		</td>
+	</tr>
+		<tr>
+		<td><%= pinterest %>
+		</td>
+	</tr>
+		<tr>
+		<td><%= stumble %>
+		</td>
+	</tr>
+		<tr>
+		<td><%= twitter %>
+		</td>
+	</tr>
+	</tr>
+		<tr>
+		<td><%= youtube %>
+		</td>
+</table>
+<br />
+<h3>Pastable newsletter stats version</h3>
+<table>
+		<tr>
+		<td><%= mail %>
+		</td>
+	</tr>
+		<tr>
+		<td><%= mustang %>
+		</td>
+	</tr>
+	<tr>
+		<td><%= internal %>
+		</td>
+	</tr>
